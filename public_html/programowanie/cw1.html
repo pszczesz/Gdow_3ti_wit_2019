@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Ćwiczenie 1</title>
 </head>
-
 <body>
     <h1>Ćwiczenie 1 JavaScript</h1>
     <script type="text/javascript">
         let imie = prompt("Podaj imię:");
+        let nazwisko = prompt("Podaj nazwisko");
+        //todo pytanie o nazwisko
+        if (imie != null && nazwisko!=null && 
+              imie.trim()!="" && nazwisko.trim().length>0) {
+            const data = new Date();
+            document.write("<h3>Twoje imie i nazwisko: " + imie + " "+nazwisko+
+                " dzisiaj jest: " + data.toLocaleDateString() +
+                " teraz jest: " + data.toLocaleTimeString() + "</h3>");
+        }else{
+            document.write("<h3 style='color:red;'>Nie podałeś imienia</h3>")
+        }
         //alert(imie);
-        document.write("<h3></h3>");
+
     </script>
 </body>
 
