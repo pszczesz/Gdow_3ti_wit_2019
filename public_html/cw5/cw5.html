@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ćwiczenie 5</title>
+    <style>
+        #pierwszy p:first-child{color: green;}
+        #pierwszy p:last-child{text-decoration: underline;}
+        p:nth-child(odd){
+            background-color: burlywood;
+        }
+        div#pierwszy{
+            animation: animacja1 5s;
+        }
+        @keyframes animacja1{
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+
+        div:last-child{
+            border: solid blueviolet 2px;
+            padding: 10px;
+            animation: anim2 3s;
+        }
+        @keyframes anim2 {
+            from{margin-left: 40px;}
+            to{margin-left: 0;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Ćwiczenie 5</h1>
+    <div id="pierwszy">
+        <p>pierwszy pargraf Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia facere itaque ullam dolore beatae, perspiciatis reprehenderit vero debitis distinctio temporibus ducimus iusto possimus corrupti repellendus eveniet vel nostrum provident!</p>
+        <p>drugi pargraf Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia facere itaque ullam dolore beatae, perspiciatis reprehenderit vero debitis distinctio temporibus ducimus iusto possimus corrupti repellendus eveniet vel nostrum provident!</p>
+        <p>trzeci pargraf Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia facere itaque ullam dolore beatae, perspiciatis reprehenderit vero debitis distinctio temporibus ducimus iusto possimus corrupti repellendus eveniet vel nostrum provident!</p>
+        <p>czwarty pargraf Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia facere itaque ullam dolore beatae, perspiciatis reprehenderit vero debitis distinctio temporibus ducimus iusto possimus corrupti repellendus eveniet vel nostrum provident!</p>
+        <p>piąty pargraf Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia facere itaque ullam dolore beatae, perspiciatis reprehenderit vero debitis distinctio temporibus ducimus iusto possimus corrupti repellendus eveniet vel nostrum provident!</p>
+    </div>
+    <hr><hr>
+    <div>
+            <p>pierwszy pargraf Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia facere itaque ullam dolore beatae, perspiciatis reprehenderit vero debitis distinctio temporibus ducimus iusto possimus corrupti repellendus eveniet vel nostrum provident!</p>
+            <p>drugi pargraf Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia facere itaque ullam dolore beatae, perspiciatis reprehenderit vero debitis distinctio temporibus ducimus iusto possimus corrupti repellendus eveniet vel nostrum provident!</p>
+            <p>trzeci pargraf Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia facere itaque ullam dolore beatae, perspiciatis reprehenderit vero debitis distinctio temporibus ducimus iusto possimus corrupti repellendus eveniet vel nostrum provident!</p>
+            <p>czwarty pargraf Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia facere itaque ullam dolore beatae, perspiciatis reprehenderit vero debitis distinctio temporibus ducimus iusto possimus corrupti repellendus eveniet vel nostrum provident!</p>
+            <p>piąty pargraf Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia facere itaque ullam dolore beatae, perspiciatis reprehenderit vero debitis distinctio temporibus ducimus iusto possimus corrupti repellendus eveniet vel nostrum provident!</p>
+        </div>
+    
+</body>
+</html>
