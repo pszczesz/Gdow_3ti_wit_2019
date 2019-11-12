@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ćwiczenie 4</title>
+    <style>
+        ol{list-style-type: lower-greek;}
+        .error{color: red;}
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        const text = prompt("Podaj tekst do wyświetlenia","ala ma kota");
+        const count = parseInt(prompt("Podaj ilość powtórzeń","6"));
+        if(text!=null && text.trim().length>0 && !isNaN(count) && count>0){
+            document.write("<ol>");
+            for(let i=0;i<count;i++){
+                document.write("<li>"+text+"</li>");
+            }
+            document.write("</ol>");
+        }else{
+            document.write("<h3 class='error'>Błędne dane</h3>");
+        }    
+        
+    </script>
+</body>
+</html>

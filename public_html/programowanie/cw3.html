@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ćwiczenie 3</title>
+</head>
+<body>
+    <h1>Ćwiczenie 3 zasięg zmiennych</h1>
+    <script type="text/javascript">
+    console.log(a);//jest zdefiniowana
+    const stala = "stała";
+    if(true){
+       // console.log(b);//nie jest zdefiniowana -->error
+        var a = 12; //zasieg funkcyjny
+        let b = 12; //zasieg blokowy
+    }
+    stala = "45"; //error nie mozna zmienic stalej
+    console.log(a);//jest zdefiniowana
+    console.log(b);//nie jest zdefiniowana -->error
+       
+    </script>
+</body>
+</html>
