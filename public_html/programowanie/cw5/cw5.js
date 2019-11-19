@@ -12,6 +12,10 @@ function start(){
     btn1.onclick = klik1;
     btn2.onclick = klik2;
     btn3.onclick = klik3;
+    document.querySelector("#suwak1").oninput = zmiana;
+}
+function zmiana(){
+    document.querySelector("#karta").style.opacity = this.value;
 }
 function klik1(){
     console.log("kliknieto btn1");       
