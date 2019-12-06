@@ -5,7 +5,7 @@ function start() {
 
 }
 function sprawdz() {
-    if (czyGrzeczny()) {
+    if (!czyGrzeczny()) {
         document.querySelector("#wynik").innerText = "Niestety brak prezentu!!"
             + this.value;;
         return;
