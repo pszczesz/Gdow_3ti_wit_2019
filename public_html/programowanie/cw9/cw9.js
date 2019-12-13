@@ -1,5 +1,10 @@
 window.onload = start;
-
+function dd(elem){
+    return elem;
+}
+const tab = ["asas",23,dd,89];
+console.log(tab);
+console.log(tab[2]("ala ma kota"));
 function start() {
     document.querySelector("#prezent").onchange = sprawdz;
 
