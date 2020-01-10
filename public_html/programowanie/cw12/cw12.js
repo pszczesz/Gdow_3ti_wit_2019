@@ -14,7 +14,7 @@ function start() {
     document.querySelector("#btn1").onclick = visClick;
 }
 function visClick() {
-    let scene = document.querySelector("#scene");
+    let scene = document.querySelector("#scene"); 
     if (scene.style.visibility != "hidden") {
         scene.style.visibility = "hidden";
     } else {
