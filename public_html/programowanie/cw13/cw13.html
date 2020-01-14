@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Ćwiczenie 13 - Rekurencja wstęp</title>
+</head>
+<body>
+    <h1>Ćwiczenie 13 - Rekurencja wstęp</h1>
+    <script type="text/javascript">
+    function Powtorz(ile){
+        document.write("wykonanie przed ifem dla ile = "+ile+"<br>");
+        if(ile>0) Powtorz(ile-1);
+        document.write("wykonanie po ifie dla ile = "+ile+"<br>");
+    }
+    function Kwadrat(n){
+        if(n>1) Kwadrat(n-1);
+        document.write(n+"<sup>2</sup> = "+(n*n)+"<br>");
+    }
+    function Silnia(n){
+        if(n<=1) return 1;
+        return Silnia(n-1)*n;
+    }
+    Powtorz(5);
+    Kwadrat(12);
+    let n=4;
+    document.write("<p>"+n+"! = "+Silnia(n)+"</p>");
+    </script>
+</body>
+</html>
