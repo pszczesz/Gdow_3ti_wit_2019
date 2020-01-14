@@ -17,3 +17,10 @@ input[type=button]{
     width: 200px;
     margin: 10px 40px;
 }
+#btn1{
+    margin-left: 50px;
+}
+#btn1:hover{
+    border: 2px black solid;
+    border-radius: 5px;
+}
