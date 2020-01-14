@@ -1,5 +1,6 @@
 window.onload = function(){
     document.querySelector("#oblicz").onclick = function(){
+        document.querySelector("#wynik").innerHTML = "";
         let elem = document.querySelector("#n");
         if(Validate(elem)){
             let n = parseInt(elem.value);            
@@ -27,5 +28,16 @@ function silniaIter(n){
     return wynik;
 }
 function Validate(elem){
+    let span = elem.nextElementSibling;
+    span.innerHTML = "";
+    let value = parseInt(elem.value);
+    if(isNaN(value)){
+        span.innerHTML = "Błędne dane!!!";
+        return false;
+    }
+    if(value<1 || value>20){
+        span.innerHTML = "Liczba spoza zakresu!!!";
+        return false;
+    }
     return true;
 }
