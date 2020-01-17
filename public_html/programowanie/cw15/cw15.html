@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>ćwiczenie 15</title>
+</head>
+<body>
+    <script type="text/javascript">
+    let dnow = new Date();
+    let dp = new Date("2018-09-23");
+    document.write(dnow.toString()+"<br>");
+    document.write(dp.toString()+"<br>");
+    document.write(dp.toLocaleDateString()+"<br>");
+    document.write(dnow.toLocaleTimeString()+"<br>");
+    document.write(dnow.getFullYear()+"<br>");
+    document.write(dnow.getYear()+"<br>");    
+    let dl = new Date(0);
+    document.write(dl.toString()+"<br>");
+    document.write(dl.getYear()+"<br>");
+    document.write(dl.getMonth()+"<br>");
+    document.write(dnow.getDay()+"<br>");
+    document.write(dnow.getDate()+"<br>");
+    dnow.setMonth(4);
+    document.write(dnow.toLocaleDateString()+"<br>");
+    </script>
+</body>
+</html>
