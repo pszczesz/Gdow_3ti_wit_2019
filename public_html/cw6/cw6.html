@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>ćwiczenie 5- position</title>
+    <style>
+        div{border: solid 1px lightslategray;margin:30px;padding: 10px;}
+    #main{height: 300px;}
+    #element{
+        position: relative;/*default static */
+        left:250px;
+        top:40px;
+    }
+    #inny{position: fixed;bottom: 10px; left:20px;}
+    #gorny{position: fixed;top: 0;left:40%;display: inline;}
+    </style>
+</head>
+<body>
+   <div id="main">
+       Główny div
+       <div id="element">Element wewnątrz diva głównego</div>
+       <div id="inny">Inny element </div>
+       <div id="gorny">Ten element ma być zawsze u samej góry</div>
+   </div> 
+</body>
+</html>
