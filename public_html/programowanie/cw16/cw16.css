@@ -1,0 +1,31 @@
+#zegar{font-size: 3em;margin-left: 200px;
+    font-weight: bold;}
+#kartka{
+    margin: auto;
+    text-align: center;
+    height: 400px;
+    width: 300px;
+    border: 3px rgb(83, 54, 54) solid;
+    border-radius: 8px;
+    box-shadow: 5px 5px grey;
+}
+#month{
+    margin-top: 30px;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+#day{
+    margin-top: 20px;
+    font-size: 9.5em;
+    font-weight: bold;
+}
+#weekDay{
+    margin-top: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+#year{
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
