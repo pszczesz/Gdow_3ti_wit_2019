@@ -1,6 +1,17 @@
 window.onload = function() {
+  document.querySelector("#popup").className = "hide";
   document.querySelector("#zegar").innerHTML = new Date().toLocaleTimeString();
   setActualDate();
+  let kartka = document.querySelector("#kartka");
+  kartka.onmouseenter = function(){
+    console.log("najechano");
+    document.querySelector("#popup").className = "show";
+    
+  }
+  kartka.onmouseleave = function(){
+    console.log("zjechano");
+    document.querySelector("#popup").className = "hide";
+  }
   setInterval(function() {
     let d = new Date();
     document.querySelector("#zegar").innerHTML = d.toLocaleTimeString();
