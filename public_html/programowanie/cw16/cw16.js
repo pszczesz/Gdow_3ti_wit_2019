@@ -18,8 +18,12 @@ function setActualDate(){
                 year: current.getFullYear()
             };
     console.log(data);
+    let formatDay = "normal";
+    if(data.day===days[0])formatDay = "niedziela";
+    if(data.day===days[6])formatDay= "sobota";
     document.querySelector("#month").innerHTML = data.month;        
-    document.querySelector("#day").innerHTML = data.date;        
+    document.querySelector("#day").innerHTML = data.date;  
+    document.querySelector("#weekDay").className = formatDay;      
     document.querySelector("#weekDay").innerHTML = data.day;        
     document.querySelector("#year").innerHTML = data.year;        
 }

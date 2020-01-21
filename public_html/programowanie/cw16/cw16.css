@@ -12,6 +12,7 @@
     border: 3px rgb(83, 54, 54) solid;
     border-radius: 8px;
     box-shadow: 5px 5px grey;
+    background-color: lightgray;
 }
 
 #month {
@@ -37,3 +38,6 @@
     font-size: 1.5em;
     font-weight: bold;
 }
+.normal{color:grey;}
+.niedziela{color: red;}
+.sobota{color:green;}
