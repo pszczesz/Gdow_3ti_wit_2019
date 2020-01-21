@@ -1,16 +1,22 @@
-img{
+img {
     border-radius: 10px;
     cursor: pointer;
     border: cornflowerblue 2px solid;
     margin: auto;
 }
-body{margin: 0;padding: 0;}  
-div#obrazek{
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div#obrazek {
     text-align: center;
     margin: auto;
-    margin-bottom: 30px ;
+    margin-bottom: 30px;
 }
-#baner{
+
+#baner {
     font-size: 3em;
     text-align: center;
     font-weight: 700;
@@ -18,14 +24,15 @@ div#obrazek{
     background-color: cornflowerblue;
     color: rgb(169, 186, 216);
     margin-bottom: 30px;
-}   
-#zyczenia{
+}
+
+#zyczenia {
     padding: 8px;
     font-size: 2em;
-    margin:auto;
+    margin: auto;
     text-align: center;
     min-height: 100px;
     box-shadow: 6px 6px 6px darkgray;
-    width: 80%; 
-    border: solid black 1px;    
+    width: 80%;
+    border: solid black 1px;
 }
