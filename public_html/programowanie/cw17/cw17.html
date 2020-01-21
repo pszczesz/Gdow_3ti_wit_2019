@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let p1 = { //utworzenie obiektu p1 o 3 wlasciwosciach i 1 metodzie
+            //wlasciwosci czyli pola
+            imie: "Jan",
+            nazwisko: "Nowak",
+            wiek:23,
+            //metoda czyli zachowanie obiektu
+            przedstawSie : function(){
+                return this.imie+" "+this.nazwisko
+                +" wiek: "+this.wiek;
+            }
+        }
+        function Book(title,author,page,price){
+            this.title = title;
+            this.author = author;
+            this.page = page;
+            this.price = price;
+            this.Show = function(){
+                return "<hr><div>Tytuł: "+this.title+"</div>" +
+                "<div>Autor: "+this.author+"</div>" +
+                "<div>Ilość stron: "+this.page+"</div>" +
+                "<div>Cena: "+this.price+" zł</div>" ;
+            }
+        }
+        let b1 = new Book('Ala ma kota',"Bogdan Wróbel",345,45.99);
+        document.write(p1.przedstawSie()+"<br>");//uzycie obiektu p1
+        document.write(b1.Show()+"<br>");//uzycie obiektu b1
+
+    </script>
+</body>
+</html>

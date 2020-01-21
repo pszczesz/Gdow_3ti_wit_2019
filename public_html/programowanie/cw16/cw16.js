@@ -5,8 +5,7 @@ window.onload = function() {
   let kartka = document.querySelector("#kartka");
   kartka.onmouseenter = function(){
     console.log("najechano");
-    document.querySelector("#popup").className = "show";
-    
+    document.querySelector("#popup").className = "show";    
   }
   kartka.onmouseleave = function(){
     console.log("zjechano");
