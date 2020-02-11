@@ -16,6 +16,16 @@ window.onload = function(){
             alert("Błędne wartości kolorów!!!");
         }       
     }
+    let suwaki = document.querySelectorAll("input[type=range]");
+    for(let i=0;i<suwaki.length;i++){
+        suwaki[i].oninput = function(){
+            const red = parseInt(document.querySelector("#redS").value);
+            const green = parseInt(document.querySelector("#greenS").value);
+            const blue = parseInt(document.querySelector("#blueS").value);
+            document.querySelector("#kwadrat")
+                .style.backgroundColor = "rgb("+red+","+green+","+blue+")";
+        }       
+    }
 }
 function Validate(color){
     return !isNaN(color) && color>=0 && color<=255;

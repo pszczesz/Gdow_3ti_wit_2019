@@ -7,3 +7,5 @@
 }
 input{margin: 10px;}
 input[type=button]{padding: 6px;}
+#suwaki{clear: both;}
+input[type=range]{vertical-align: middle;}
