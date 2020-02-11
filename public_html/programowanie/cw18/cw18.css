@@ -1,0 +1,9 @@
+#kwadrat{
+    height: 200px; width: 200px;
+    float: left;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+input{margin: 10px;}
+input[type=button]{padding: 6px;}
