@@ -6,9 +6,41 @@ window.onload = function(){
         let loginOK = ValidateLogin(loginElem);
         let pas1OK = ValidatePass1(pass1Elem);
         let passSameOK = ValidateSame(pass1Elem,pass2Elem);
+        if(loginOK && pas1OK && passSameOK){
+            let formDane = {
+                login:document.querySelector("#login").value,
+                password:document.querySelector("#password1").value,
+                klasa:document.querySelector("#klasa").value,
+                others:getInfo(),
+                info : function(){
+                    let html = "<ul>";
+                    html+="<li>login: "+this.login+"</li>";
+                    html+="<li>hasło: "+this.password+"</li>";
+                    html+="<li>klasa: "+this.klasa+"</li>";
+                    html+="<li>dodoatkowe informacje: <ul>";
+                    for(let i=0;i<this.others.length;i++){
+                        html += "<li>"+this.others[i]+"</li>"
+                    }
+
+                    html +="</ul></li>";
+                    return html;
+                }
+            };
+            console.log(formDane);
+            document.querySelector("#wynik").innerHTML = formDane.info();
+        }
     }
 }
-
+function getInfo(){
+    let checkBoxes = document.querySelectorAll("input[type=checkbox]");
+    let dane = [];
+    for(let i=0;i<checkBoxes.length;i++){
+        if(checkBoxes[i].checked){
+            dane.push(checkBoxes[i].value);
+        }
+    }
+    return dane;
+}
 function ValidateLogin(elem){
     //console.log(elem);
     let value = elem.value;
