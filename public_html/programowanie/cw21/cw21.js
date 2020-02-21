@@ -2,8 +2,10 @@ window.onload = function(){
     document.querySelector("#zatwierdz").onclick = function(){
         let loginElem = document.querySelector("#login");
         let pass1Elem = document.querySelector("#password1");
+        let pass2Elem = document.querySelector("#password2");
         let loginOK = ValidateLogin(loginElem);
         let pas1OK = ValidatePass1(pass1Elem);
+        let passSameOK = ValidateSame(pass1Elem,pass2Elem);
     }
 }
 
@@ -29,6 +31,17 @@ function ValidatePass1(elem){
         return true;
     }else{
         next.innerHTML = "Login musi mieć co najmniej 6 znaków i co najmniej jedną cyfrę!!!";
+        return false;
+    }
+}
+function ValidateSame(elem1,elem2){
+    let value = elem2.value;
+    let next = elem2.nextElementSibling;
+    if(elem1.value==elem2.value){
+        next.innerHTML = "";
+        return true;
+    }else{
+        next.innerHTML = "Hasła się różnią!!!!";
         return false;
     }
 }
