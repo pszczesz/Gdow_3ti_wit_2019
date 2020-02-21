@@ -66,8 +66,7 @@ function ValidatePass1(elem){
         return false;
     }
 }
-function ValidateSame(elem1,elem2){
-    let value = elem2.value;
+function ValidateSame(elem1,elem2){    
     let next = elem2.nextElementSibling;
     if(elem1.value==elem2.value){
         next.innerHTML = "";
