@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Ćwiczenie 21 - formularz</title>
+    <link rel="stylesheet" href="cw21.css">
+</head>
+<body>
+    <h1>Ćwiczenie 21 - formularz</h1>
+    <form>
+        <fieldset>
+            <legend>Dane do rejestracji</legend>
+            <div class="line">
+                <label for="login">Login: </label>
+                <input type="text" id="login">
+                <span class="error"></span>
+            </div>
+            <div class="line">
+                <label for="password1">Hasło: </label>
+                <input type="password" id="password1">
+                <span class="error"></span>
+            </div>
+            <div class="line">
+                <label for="password2">Powtórz hasło: </label>
+                <input type="password" id="password2">
+                <span class="error"></span>
+            </div>
+            <div class="line">
+                <label for="klasa">Klasa</label>
+                <select name="klasa" id="klasa">
+                    <option value="1A">1A</option>
+                    <option value="1B">1B</option>
+                    <option value="1C">1C</option>
+                </select>
+            </div>
+            <div class="line">
+                <label for="">Dodatkowe informacje</label><br>
+                <input type="checkbox" value="karta zdrowia">karta zdrowia<br>
+                <input type="checkbox" value="świadectwo">świadectwo<br>
+                <input type="checkbox" value="wyniki egzaminu">wyniki egzaminu<br>
+            </div>
+            <input type="button" id="zatwierdz" value="Zatwierdź">
+        </fieldset>
+        
+    </form>
+    <script type="text/javascript" src="cw21.js"></script>
+</body>
+</html>
