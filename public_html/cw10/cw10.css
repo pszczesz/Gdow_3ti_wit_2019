@@ -1,0 +1,6 @@
+header{font-size: 4em;text-align: center;color: rgb(241, 201, 185);
+     background-color: brown;font-weight: bolder;}
+table{margin:30px;border-collapse: collapse;}
+th,td{border: solid 1px black; padding: 5px 20px;}
+th{background-color: yellow;text-align: center;}
+#left,#right{float: left; width: 48%;}
