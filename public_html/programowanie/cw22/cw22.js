@@ -1,7 +1,7 @@
 window.onload = function(){
     let skarb = document.querySelector("#skarb");
     let info = document.querySelector("#info");
-    let size = 15;
+    let size = 5;
     skarb.style.width = size+"%";
     skarb.style.height = size+"%";
     console.log(skarb.style.width);
