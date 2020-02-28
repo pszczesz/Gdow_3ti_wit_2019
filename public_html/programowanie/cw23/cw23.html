@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ćwiczenie 23 - createElement</title>
+</head>
+<body>
+    <div>
+        <ul id="lista1">
+            <li>Element listy</li>
+            <li>Element listy</li>
+            <li>Element listy</li>
+        </ul>
+    </div>
+    <input type="text" name="text" id="text" value="nowy lement listy">
+    <input type="button" value="Dodaj" id="dodaj">
+    <script>
+       document.querySelector("#dodaj").onclick = function(){
+           let newElem = document.createElement("li");
+           let newDiv = document.createElement('div');
+           document.body.appendChild(newDiv);
+           newDiv.innerHTML = 'Utworzony w js';
+           newElem.innerHTML = document.querySelector("#text").value;
+           document.querySelector("#lista1").appendChild(newElem);
+       }
+    </script>
+</body>
+</html>
