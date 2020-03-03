@@ -1,0 +1,6 @@
+h1{text-align: center; border-bottom: chocolate solid 2px;}
+#info{float: left; width: 300px;}
+label{display:inline-block;width: 100px;text-align: right; margin: 20px 0px;}
+input[type=button]{margin-left: 100px;padding: 5px; width: 120px;}
+table{border-collapse: collapse; margin: 20px;}
+td{border: solid 1px lightcoral;width: 22px;height: 22px;}
